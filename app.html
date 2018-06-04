@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
@@ -12,6 +12,7 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <title>Praneet Bomma</title>
 </head>
@@ -19,9 +20,9 @@
 
     <section id="main" class="main" style="display: block">
 
-        <section id="navbar_section">
+        <div id="navbar_section">
 
-            <nav class="navbar navbar-expand-lg navbar-fixed-top" style="border-bottom: #e2e3e5 1px solid">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top">
                 <div class="container">
 
                     <div class="navbar-header align-items-center float-left">
@@ -36,114 +37,146 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <div class="collapse navbar-collapse" style="flex-direction: row-reverse;" id="navbar_links">
+                    <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_links">
                         <ul class="nav navbar-nav navbar-right float-lg-left">
-                            <li><a data-scroll class="btn btn-link text-dark" style="padding: 10px" href="#about">About</a></li>
-                            <li><a data-scroll class="btn btn-link text-dark" style="padding: 10px" href="#technology">Technology</a></li>
-                            <li><a data-scroll class="btn btn-link text-dark" style="padding: 10px" href="#projects">Projects</a></li>
+                            <li><a data-scroll class="btn btn-link text-dark" href="#about">About</a></li>
+                            <li><a data-scroll class="btn btn-link text-dark" href="#technology">Technology</a></li>
+                            <li><a data-scroll class="btn btn-link text-dark" href="#projects">Projects</a></li>
 
-                            <li class="pr-btn"><div><a href="#" class="btn btn-outline-secondary" style="padding: 10px">Resume</a></div></li>
+                            <li class="pr-btn"><a class="btn btn-outline-secondary">Resume</a></li>
                         </ul>
-
                     </div>
 
                 </div>
             </nav>
 
-        </section>
+        </div>
 
-        <section class="wrapper landing-page container-fluid" id="landing" style="background: url(assets/simple-codelines.svg) no-repeat; width: 100%; height: 110vh">
+        <div class="wrapper landing container-fluid" id="landing">
 
-
-
-            <div >
-                <div style="padding-top: 170px" class="text-center container">
+                <div id="landing_content" class="text-center container">
                     <img src="assets/hi.png" alt="">
-                    <h1 class="font-weight-bold" style="padding-top: 15px">I'm Praneet Bomma</h1>
-                    <h4 style="padding-top: 5px"><img src="assets/Python-logo-notext.svg" width="25px" height="25px" alt=""> &nbsp;Developer</h4>
+                    <h1 class="font-weight-bold" id="name">I'm Praneet Bomma</h1>
+                    <h4 id="developer"><img src="assets/Python-logo-notext.svg" alt=""> &nbsp;Developer</h4>
 
-                    <p style="font-size: 20px; padding-top: 70px;">Started as Android Developer, now a full-fledged Full Stack Developer.
+                    <p id="myDescription">Started as Android Developer, now a full-fledged Full Stack Developer.
                         <br>Technology for me is a mix of delightful product experience, user focus & pixel precision.</p>
 
-                    <button type="button" style="margin-top: 50px; background: #39B27B; color: #FFFFFF" class="btn">Resume</button>
+                    <button type="button" class="btn">Resume</button>
 
                     <div>
-                        <i class="fa fa-arrow-down" style="color: #6c757d; margin-top: 80px"></i>
+                        <i class="fa fa-arrow-down"></i>
                     </div>
                 </div>
-            </div>
 
-        </section>
+        </div>
 
-        <section class="wrapper container text-center">
+        <div class="wrapper container text-center">
 
-            <h1 class="font-weight-bold text-center" >Technologies</h1>
-            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
-                <div class="col-4"><img src="assets/beginner.png" width="20px" height="20px" alt=""> &nbsp;Beginner</div>
-                <div class="col-4"><img src="assets/intermediate.png" width="20px" height="20px" alt=""> &nbsp;Intermediate</div>
-                <div class="col-4"><img src="assets/advanced.png" width="20px" height="20px" alt=""> &nbsp;Advanced</div>
+            <h1 class="font-weight-bold text-center" >Skills & Technologies</h1>
+            <div class="row" id="skill_level">
+                <div class="col-4"><img src="assets/beginner.png" class="skill_level" alt=""> &nbsp;Beginner</div>
+                <div class="col-4"><img src="assets/intermediate.png" class="skill_level" alt=""> &nbsp;Intermediate</div>
+                <div class="col-4"><img src="assets/advanced.png" class="skill_level" alt=""> &nbsp;Advanced</div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail justify-content-center">
+                        <img src="assets/Python-logo-notext.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">Python</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/image.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">Image Processing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/chip.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">Machine Learning</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/react.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">React Native</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/Unofficial_JavaScript_logo_2.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">JavaScript</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/nodejs-icon.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">NodeJS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/android.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">Android</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 0.1px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                    <img src="assets/github-logo.svg" class="skill_img rounded" alt="">
+                    <h4 class="font-weight-bold">Github</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4" style="border: #EEEEEE solid 2px">
-                    <img src="assets/Python-logo-notext.svg" width="50px" height="50px" alt="">
-                    <h4 class="font-weight-bold">Python</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
-                    <img src="assets/intermediate.png" width="32px" height="32px" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4 skills">
+                    <div class="row skill_detail">
+                        <img src="assets/coding.svg" class="skill_img rounded" alt="">
+                        <h4 class="font-weight-bold">Scraping</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem, enim excepturi nobis quos sit velit veritatis!</p>
+                    </div>
+                    <div class="row justify-content-center skill_level_img">
+                        <img src="assets/intermediate.png" alt="">
+                    </div>
                 </div>
+
 
 
 
             </div>
 
-        </section>
+        </div>
 
     </section>
 

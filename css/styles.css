@@ -1,8 +1,411 @@
-/*Global*/
+
+/********************************** Global **********************************/
 
 body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    /*background: url(../assets/simple-codelines.svg) #F5F5F5 no-repeat;*/
+    /*background-size: contain;*/
+    /*background-position-y: 65px;*/
+
+}
+
+#main {
+    display: block;
+}
+
+/********************************** Navbar **********************************/
+
+nav {
+    border-bottom: #e2e3e5 1px solid
+}
+
+/*#navbar_links {*/
+    /*flex-direction: row-reverse;*/
+/*}*/
+
+#navbar_links li {
+    padding: 5px
+}
+
+/********************************** Landing **********************************/
+
+#landing {
+	background: url(../assets/simple-codelines.svg) no-repeat;
+	background-size: cover;
+	position: relative;
+    display: block;
+    min-width: 100%;
+/*    min-height: 90vh;
+    max-height: 100vh;*/
+    /*min-height: 40vh*/
+    /*height: 50vh;*/
+}
+
+#landing_content {
+    padding-top: 170px;
+}
+
+#name {
+    padding-top: 15px
+}
+
+#developer {
+    padding-top: 5px;
+}
+
+#developer img {
+    width: 25px;
+    height: 25px;
+}
+
+#myDescription {
+    font-size: 20px;
+    padding-top: 70px;
+}
+
+#landing_content button {
+    margin-top: 50px;
+    background: #39B27B;
+    color: #FFFFFF
+}
+
+#landing_content i {
+    color: #6c757d;
+    margin-top: 80px;
+}
+
+/********************************** Technologies **********************************/
+
+#skill_level {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skill_level {
+    width: 20px;
+    height: 20px;
+}
+
+.skills {
+    border: #EEEEEE solid 0.1px;
+}
+
+.skill_detail {
+    display: inline;
+}
+
+.skill_img {
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background: #E0E0E0;
+    padding: 10px;
+}
+
+.skill_level_img {
+    position:absolute;
+    bottom: 15px;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.skill_level_img img {
+    width: 32px;
+    height: 32px;
+}
+
+.skills p {
+    margin-top: 20px;
+}
+
+/********************************** Projects **********************************/
+
+
+
+/********************************** About **********************************/
+
+
+
+/********************************** HireMe **********************************/
+
+
+
+/********************************** Footer **********************************/
+
+
+
+/********************************** Media Queries **********************************/
+
+ /*Extra small devices (portrait phones, less than 576px)*/
+/* Iphone 6 Plus*/
+@media (max-width: 575.98px) {
+
+    #landing {
+        min-width: 100%;
+        min-height: 70vh;
+    }
+
+    #landing_content {
+        padding-top: 80px;
+    }
+
+    #name {
+        padding-top: 7px
+    }
+
+    #developer {
+        padding-top: 2px;
+    }
+
+    #myDescription {
+        font-size: 15px;
+        padding-top: 40px;
+    }
+
+    #landing_content button {
+        margin-top: 30px;
+        background: #39B27B;
+        color: #FFFFFF
+    }
+
+    #landing_content i {
+        color: #6c757d;
+        margin-top: 40px;
+    }
+
+    #landing_content h1 {
+        font-size: 1.2rem;
+    }
+
+    #landing_content h4 {
+        font-size: 0.5rem;
+    }
+
+    #landing_content img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #developer img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+/* Iphone 6 Plus landscape*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #landing {
+        min-width: 100%;
+        min-height: 80vh;
+    }
+
+    #landing_content {
+        padding-top: 100px;
+    }
+
+    #name {
+        padding-top: 7px
+    }
+
+    #developer {
+        padding-top: 2px;
+    }
+
+    #myDescription {
+        font-size: 15px;
+        padding-top: 40px;
+    }
+
+    #landing_content button {
+        margin-top: 30px;
+        background: #39B27B;
+        color: #FFFFFF
+    }
+
+    #landing_content i {
+        color: #6c757d;
+        margin-top: 50px;
+    }
+
+    #landing_content h1 {
+        font-size: 1.4rem;
+    }
+
+    #landing_content h4 {
+        font-size: 0.8rem;
+    }
+
+    #landing_content img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #developer img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+/* Amzon Kindle landscape and Ipad landscape*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #landing {
+        min-width: 100%;
+        min-height: 90vh;
+    }
+
+    #landing_content {
+        padding-top: 120px;
+    }
+
+    #name {
+        padding-top: 9px
+    }
+
+    #developer {
+        padding-top: 2px;
+    }
+
+    #myDescription {
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    #landing_content button {
+        margin-top: 30px;
+        background: #39B27B;
+        color: #FFFFFF
+    }
+
+    #landing_content i {
+        color: #6c757d;
+        margin-top: 60px;
+    }
+
+    #landing_content h1 {
+        font-size: 1.7rem;
+    }
+
+    #landing_content h4 {
+        font-size: 1rem;
+    }
+
+    #landing_content img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #developer img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+ /*Large devices (desktops, 992px and up)*/
+/* Ipad Mini 2 */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #landing {
+
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+    #landing_content {
+        padding-top: 150px;
+    }
+
+    #name {
+        padding-top: 12px
+    }
+
+    #developer {
+        padding-top: 4px;
+    }
+
+    #myDescription {
+        font-size: 18px;
+        padding-top: 60px;
+    }
+
+    #landing_content button {
+        margin-top: 40px;
+        background: #39B27B;
+        color: #FFFFFF
+    }
+
+    #landing_content i {
+        color: #6c757d;
+        margin-top: 70px;
+    }
+
+    #landing_content h1 {
+        font-size: 2rem;
+    }
+
+    #landing_content h4 {
+        font-size: 1.2rem;
+    }
+
+    #landing_content img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #developer img {
+        width: 22px;
+        height: 22px;
+    }
+
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+/* Kindle */
+@media (min-width: 1200px) {
+
+    /*#landing {*/
+
+        /*display: block;*/
+        /*min-width: 100%;*/
+        /*min-height: 100vh;*/
+    /*}*/
+
+    /*#landing_content {*/
+        /*padding-top: 170px;*/
+    /*}*/
+
+    /*#name {*/
+        /*padding-top: 15px*/
+    /*}*/
+
+    /*#developer {*/
+        /*padding-top: 5px;*/
+    /*}*/
+
+    /*#developer img {*/
+        /*width: 25px;*/
+        /*height: 25px;*/
+    /*}*/
+
+    /*#myDescription {*/
+        /*font-size: 20px;*/
+        /*padding-top: 70px;*/
+    /*}*/
+
+    /*#landing_content button {*/
+        /*margin-top: 50px;*/
+        /*background: #39B27B;*/
+        /*color: #FFFFFF*/
+    /*}*/
+
+    /*#landing_content i {*/
+        /*color: #6c757d;*/
+        /*margin-top: 80px;*/
+    /*}*/
+
 }
