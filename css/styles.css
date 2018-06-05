@@ -7,9 +7,23 @@ body{
     overflow-x: hidden;
     background: #F5F5F5;
     font-family: 'Roboto', sans-serif;
-
 }
 
+h1 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
 
 /********************************** Navbar **********************************/
 
@@ -64,7 +78,7 @@ nav {
 }
 
 #myDescription {
-    font-size: 20px;
+    /*font-size: 20px;*/
     padding-top: 70px;
 }
 
@@ -146,6 +160,21 @@ nav {
 /* Iphone 6 Plus*/
 @media (max-width: 575.98px) {
 
+    h1 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 
 }
 
@@ -153,17 +182,65 @@ nav {
 /* Iphone 6 Plus landscape*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+    h1 {
+        font-size: 27px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
 }
 
  /*Medium devices (tablets, 768px and up)*/
 /* Amzon Kindle landscape and Ipad landscape*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    h1 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    h5 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
 }
 
  /*Large devices (desktops, 992px and up)*/
 /* Ipad Mini 2 */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 17px;
+    }
 
 }
 
