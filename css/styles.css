@@ -128,7 +128,7 @@ nav li a:hover {
 
 #landing {
     padding-top: 100px;
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
     position: relative;
     background-image: url('../assets/simple-codelines.svg');
     background-repeat: no-repeat;
@@ -168,6 +168,11 @@ nav li a:hover {
 }
 
 /********************************** Technologies **********************************/
+
+#skills {
+    padding-top: 100px;
+    /*padding-bottom: 100px;*/
+}
 
 #skill_level {
     margin-top: 50px;
@@ -214,17 +219,31 @@ nav li a:hover {
 
 /********************************** Projects **********************************/
 
+#projects {
+    padding-top: 100px;
+    /*padding-bottom: 100px;*/
+}
+
 .projectdepth {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.25) !important;
 }
 
 /********************************** About **********************************/
 
-
+#about {
+    padding-top: 100px;
+}
 
 /********************************** HireMe **********************************/
 
+#hireme {
+    padding-top: 100px;
+}
 
+#interested {
+    font-size: 80px;
+    color: #E0E0E0
+}
 
 /********************************** Footer **********************************/
 
@@ -250,6 +269,15 @@ nav li a:hover {
 
     p {
         font-size: 14px;
+    }
+
+    #hireme img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #interested {
+        font-size: 50px;
     }
 
 }
