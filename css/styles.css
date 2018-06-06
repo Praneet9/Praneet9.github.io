@@ -50,6 +50,10 @@ nav {
     padding: 10px
 }
 
+.section {
+    min-height: 100vh;
+}
+
 /********************************** Landing **********************************/
 
 #landing {
@@ -61,7 +65,7 @@ nav {
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 #name {
@@ -225,6 +229,10 @@ nav {
  /*Large devices (desktops, 992px and up)*/
 /* Ipad Mini 2 */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #landing {
+        background-image: url("../assets/6001x.png");
+    }
 
     h1 {
         font-size: 30px;
