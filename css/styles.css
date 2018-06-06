@@ -25,6 +25,64 @@ p {
     font-size: 18px;
 }
 
+.tag {
+    padding: 7px;
+    margin: 5px;
+    border: solid 1px
+}
+
+.ml {
+    border-color: #3F46AD;
+    color: #3F46AD;
+    background-color: #EFF0FF;
+}
+
+.ip {
+    border-color: #178CCC;
+    color: #178CCC;
+    background-color: #F1F6F9;
+}
+
+.python {
+    border-color: #EC2A70;
+    color: #EC2A70;
+    background-color: #F9EBF0;
+}
+
+.android {
+    border-color: #1E8F53;
+    color: #1E8F53;
+    background-color: #C5FFE0;
+}
+
+.mongo {
+    border-color: #F9B644;
+    color: #F9B644;
+    background-color: #F8EFE0;
+}
+
+.mysql {
+    border-color: #8F5E1E;
+    color: #8F5E1E;
+    background-color: #FFE8CB;
+}
+
+.react {
+
+}
+
+.node {
+    border-color: #FF2E2E;
+    color: #FF2E2E;
+    background-color: #FFD9D9;
+}
+
+.web {
+    border-color: #A6D864;
+    color: #A6D864;
+    background-color: #E8FBD0;
+}
+
 /********************************** Navbar **********************************/
 
 .header {
@@ -48,6 +106,18 @@ nav {
 
 #navbar_links li {
     padding: 10px
+}
+
+nav li:hover {
+    color: #fff;
+}
+
+nav li a:hover {
+    border: #6c757d 1px solid;
+}
+
+.links {
+    color: #fff;
 }
 
 .section {
@@ -144,7 +214,9 @@ nav {
 
 /********************************** Projects **********************************/
 
-
+.projectdepth {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.25) !important;
+}
 
 /********************************** About **********************************/
 
