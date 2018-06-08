@@ -247,7 +247,15 @@ nav li a:hover {
 
 /********************************** Footer **********************************/
 
+#social_links {
 
+}
+#social_links img {
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /********************************** Media Queries **********************************/
 
@@ -272,12 +280,17 @@ nav li a:hover {
     }
 
     #hireme img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     #interested {
         font-size: 50px;
+    }
+
+    .projectdepth {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
