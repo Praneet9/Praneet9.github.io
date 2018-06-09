@@ -138,6 +138,12 @@ nav li a:hover {
     /*min-height: 100vh;*/
 }
 
+#hi_img {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
 #name {
     padding-top: 15px
 }
@@ -228,6 +234,18 @@ nav li a:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.25) !important;
 }
 
+.card-columns {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.viewgithub {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /********************************** About **********************************/
 
 #about {
@@ -240,6 +258,11 @@ nav li a:hover {
     padding-top: 100px;
 }
 
+#hiremesvg {
+    width: 400px;
+    height: 400px
+}
+
 #interested {
     font-size: 80px;
     color: #E0E0E0;
@@ -248,10 +271,16 @@ nav li a:hover {
 }
 
 #hire_header {
-    top: -15px;
+    position: relative;
+    top: -20px;
 }
 
 /********************************** Footer **********************************/
+
+footer {
+    border-top: #EEEEEE solid 2px;
+    padding-top: 10px;
+}
 
 #social_links {
 
@@ -261,6 +290,8 @@ nav li a:hover {
     /*margin-bottom: 5px;*/
     margin-left: 10px;
     margin-right: 10px;
+    width: 30px;
+    height: 30px
 }
 
 /********************************** Media Queries **********************************/
@@ -285,9 +316,14 @@ nav li a:hover {
         font-size: 14px;
     }
 
-    #hireme img {
+    #hiremesvg {
         width: 200px;
-        height: 200px;
+        height: 200px
+    }
+
+    #hire_header {
+        position: relative;
+        top: -15px;
     }
 
     #interested {
@@ -321,6 +357,10 @@ nav li a:hover {
     .navbar-toggler {
         padding-right: 15px;
     }
+
+    /*.card-columns {*/
+        /*column-count: 2;*/
+    /*}*/
 
 }
 
@@ -357,6 +397,15 @@ nav li a:hover {
         min-height: 100vh;
     }
 
+    .card-columns {
+        column-count: 2;
+    }
+
+    #hiremesvg {
+        width: 250px;
+        height: 250px
+    }
+
 }
 
  /*Medium devices (tablets, 768px and up)*/
@@ -377,6 +426,15 @@ nav li a:hover {
 
     p {
         font-size: 16px;
+    }
+
+    .card-columns {
+        column-count: 2;
+    }
+
+    #hiremesvg {
+        width: 275px;
+        height: 275px
     }
 
 }
@@ -403,6 +461,11 @@ nav li a:hover {
 
     p {
         font-size: 17px;
+    }
+
+    #hiremesvg {
+        width: 300px;
+        height: 300px
     }
 
 }
