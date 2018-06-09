@@ -242,7 +242,13 @@ nav li a:hover {
 
 #interested {
     font-size: 80px;
-    color: #E0E0E0
+    color: #E0E0E0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#hire_header {
+    top: -15px;
 }
 
 /********************************** Footer **********************************/
@@ -293,6 +299,29 @@ nav li a:hover {
         margin-right: 10px;
     }
 
+    #navbar_links {
+        min-height: 100vh;
+    }
+
+
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header #navbar_links {
+        background: rgba(0, 120, 0, 0.7) url("../assets/6001x.png");
+    }
+
+    nav .navbar-brand {
+        padding-left: 10px;
+        margin-right: 0;
+    }
+
+    .navbar-toggler {
+        padding-right: 15px;
+    }
+
 }
 
  /*Small devices (landscape phones, 576px and up)*/
@@ -313,6 +342,19 @@ nav li a:hover {
 
     p {
         font-size: 15px;
+    }
+
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header #navbar_links {
+        background: rgba(0, 120, 0, 0.7) url("../assets/6001x.png");
+    }
+
+    #navbar_links {
+        min-height: 100vh;
     }
 
 }
