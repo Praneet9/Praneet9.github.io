@@ -139,7 +139,7 @@ nav li a:hover {
 }
 
 #hi_img {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     width: 50px;
     height: 50px;
 }
@@ -316,6 +316,10 @@ footer {
         font-size: 14px;
     }
 
+    #landing_content {
+
+    }
+
     #hiremesvg {
         width: 200px;
         height: 200px
@@ -356,6 +360,12 @@ footer {
 
     .navbar-toggler {
         padding-right: 15px;
+    }
+
+    #hi_img {
+        /*margin-top: 20px;*/
+        width: 35px;
+        height: 35px;
     }
 
     /*.card-columns {*/
@@ -406,6 +416,12 @@ footer {
         height: 250px
     }
 
+    #hi_img {
+        /*margin-top: 30px;*/
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
  /*Medium devices (tablets, 768px and up)*/
@@ -437,6 +453,12 @@ footer {
         height: 275px
     }
 
+    #hi_img {
+        /*margin-top: 40px;*/
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
  /*Large devices (desktops, 992px and up)*/
@@ -466,6 +488,12 @@ footer {
     #hiremesvg {
         width: 300px;
         height: 300px
+    }
+
+    #hi_img {
+        /*margin-top: 45px;*/
+        width: 48px;
+        height: 48px;
     }
 
 }
