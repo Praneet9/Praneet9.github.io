@@ -185,10 +185,10 @@ nav li a:hover {
     margin-bottom: 50px;
 }
 
-.skill_level {
+/* .skill_level {
     width: 20px;
     height: 20px;
-}
+} */
 
 .skills {
     border: #EEEEEE solid 0.1px;
@@ -196,6 +196,10 @@ nav li a:hover {
 
 .skill_detail {
     display: inline;
+}
+
+.skill_detail h4 {
+    margin-bottom: 25px;
 }
 
 .skill_img {
@@ -211,12 +215,13 @@ nav li a:hover {
     position:absolute;
     bottom: 15px;
     width: 100%;
+    margin-top: 50px;
     padding-right: 15px;
 }
 
-.skill_level_img img {
-    width: 32px;
-    height: 32px;
+.skill_level_img img, .skill_level {
+    width: 28px;
+    height: 28px;
 }
 
 .skills p {
@@ -372,6 +377,11 @@ footer {
         height: 35px;
     }
 
+    .skill_level_img img, .skill_level {
+        width: 22px;
+        height: 22px;
+    }
+
     /*.card-columns {*/
         /*column-count: 2;*/
     /*}*/
@@ -426,6 +436,11 @@ footer {
         height: 40px;
     }
 
+    .skill_level_img img, .skill_level {
+        width: 24px;
+        height: 24px;
+    }
+
 }
 
  /*Medium devices (tablets, 768px and up)*/
@@ -461,6 +476,11 @@ footer {
         /*margin-top: 40px;*/
         width: 45px;
         height: 45px;
+    }
+
+    .skill_level_img img, .skill_level {
+        width: 26px;
+        height: 26px;
     }
 
 }
