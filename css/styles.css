@@ -1,3 +1,27 @@
+/********************************** Loading Screen **********************************/
+
+#body {
+    display: none;
+}
+
+svg {
+    margin-top: 20%;
+    max-width: 10em;
+    /*border-radius: 3px;*/
+    /*box-shadow: 2px 2px 5px #fff;*/
+    background: #F5F5F5;
+    fill: none;
+    stroke: #CFD8DC;
+    stroke-linecap: round;
+    stroke-width: 5%
+}
+
+use {
+    stroke: #000;
+    animation: a 1.5s linear infinite
+}
+
+@keyframes a { to { stroke-dashoffset: 0px } }
 
 /********************************** Global **********************************/
 
@@ -28,6 +52,7 @@ p {
 .tag {
     padding: 7px;
     margin: 5px;
+    font-size: 14px;
     border: solid 1px
 }
 
@@ -90,7 +115,8 @@ p {
 .header {
     border-bottom: #e2e3e5 1px solid;
     background-color: #F5F5F5;
-    position: fixed;z-index: 555;
+    position: fixed;
+    z-index: 555;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -248,6 +274,7 @@ nav li a:hover {
 
 .viewgithub {
     width: 100%;
+    color: #000000;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -370,7 +397,7 @@ footer {
     }
 
     .header #navbar_links {
-        background: rgba(0, 120, 0, 0.7) url("../assets/6001x.png");
+        background: transparent url("../assets/6001x.png");
     }
 
     nav .navbar-brand {

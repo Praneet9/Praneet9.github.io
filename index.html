@@ -14,45 +14,7 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-        .fa
-        {
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            display: inline-block;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            line-height: 1; }
-
-        .fa-bars:before {
-            content: "\f0c9"; }
-        .fa-arrow-down:before {
-            content: "\f063"; }
-
-        #body {
-            display: none;
-        }
-
-        svg {
-            margin-top: 20%;
-            max-width: 10em;
-            /*border-radius: 3px;*/
-            /*box-shadow: 2px 2px 5px #fff;*/
-            background: #F5F5F5;
-            fill: none;
-            stroke: #CFD8DC;
-            stroke-linecap: round;
-            stroke-width: 5%
-        }
-
-        use {
-            stroke: #000;
-            animation: a 1.5s linear infinite
-        }
-
-        @keyframes a { to { stroke-dashoffset: 0px } }
-    </style>
+    
     <title>Praneet Bomma</title>
 </head>
 
@@ -91,7 +53,7 @@
                         <li><a data-scroll class="btn btn-block text-dark links" href="#skills">Skills</a></li>
                         <li><a data-scroll class="btn btn-block text-dark links" href="#projects">Projects</a></li>
 
-                        <li class="pr-btn"><a class="btn btn-block btn-outline-secondary">Resume</a></li>
+                        <li class="pr-btn"><a href="Praneet.pdf" class="btn btn-block btn-outline-secondary">Resume</a></li>
                     </ul>
                 </div>
 
@@ -296,12 +258,16 @@
                 <div class="row mt-5">
                     <div class="card-columns mt-5">
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">Smart Editor</h5>
+                                <a class="project_title" data-toggle="collapse" href="#smart_editor" role="button" aria-expanded="true" aria-controls="smart_editor">
+                                        <h5 class="card-header font-weight-bold">Smart Editor</h5></a>
+                                    
+                                    <div class="collapse show" id="smart_editor">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-                                    amet animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste
-                                    iure optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">A web app to convert handwritten forms to digital forms. Initially you are supposed to upload a template
+                                of your form that isn't filled. That is only a one time task. If the templates of your form is already available, you just need to
+                                upload your handwritten form and it will be converted to digital text. It was developed using Deep Learning & Image Processing
+                                and uses Flask as the back-end framework. </p>
                                 <div class="row">
                                     <span class="rounded tag ml">Machine Learning</span>
                                     <span class="rounded tag ip">Image Processing</span>
@@ -314,17 +280,18 @@
                                 </div>
 
                             </div>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">Voices of Mumbai</h5>
+                                <a class="project_title" data-toggle="collapse" href="#voices_of_mumbai" role="button" aria-expanded="false" aria-controls="voices_of_mumbai">
+                                        <h5 class="card-header font-weight-bold">Voices of Mumbai</h5></a>
+                                    
+                                    <div class="collapse show" id="voices_of_mumbai">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                                    necessitatibus nobis officiis sunt voluptates. Corporis, delectus earum eligendi
-                                    eos expedita ipsa laboriosam quae quas, qui sit temporibus ut velit veritatis.
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet animi aperiam aut
-                                    autem cumque dicta distinctio dolores facilis, fugiat iste iure optio quasi, sed
-                                    soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">A service for people to report the issues they face daily to the authorities. Currently it is mainly 
+                                concentrating on reporting potholes in the area. It can be scaled to different issues as well. I'm continuing working on 
+                                this project and aiming to integrate Deep Learning in it.</p>
                                 <div class="row">
                                     <span class="rounded tag ml">Machine Learning</span>
                                     <span class="rounded tag ip">Image Processing</span>
@@ -335,17 +302,19 @@
                                         View on Github
                                     </button>
                                 </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">E-CheckIn</h5>
+                                <a class="project_title" data-toggle="collapse" href="#e_checkin" role="button" aria-expanded="false" aria-controls="e_checkin">
+                                        <h5 class="card-header font-weight-bold">E-CheckIn</h5></a>
+                                    
+                                    <div class="collapse show" id="e_checkin">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aliquam doloremque eveniet expedita, impedit magni nihil porro praesentium quaerat
-                                    reiciendis vel. ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                                    animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste iure
-                                    optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">An Android application that can be used to check-in registered participants using the QR Code that was sent 
+                                after successfull registration. It was specially built to use during ERR_404 State Level Hackathon. This app can help avoid 
+                                long queues and organize an event better.</p>
                                 <div class="row">
                                     <span class="rounded tag android">Android</span>
                                     <button class="btn btn-outline-secondary viewgithub">
@@ -353,15 +322,18 @@
                                     </button>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">Plant Monitoring</h5>
+                                <a class="project_title" data-toggle="collapse" href="#plant_monitoring" role="button" aria-expanded="false" aria-controls="plant_monitoring">
+                                        <h5 class="card-header font-weight-bold">Plant Monitoring</h5></a>
+                                    
+                                    <div class="collapse show" id="plant_monitoring">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam, atque. ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                                    animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste iure
-                                    optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">A deep learning based system for disorder detection in tomato plants. Also using IoT to get sensor data 
+                                from the plants. This project is currently under development. This model is currently trained on images. It will further be 
+                                trained on sensor data. The sensors are set-up and data collection is under process.</p>
                                 <div class="row">
                                     <span class="rounded tag ml">Machine Learning</span>
                                     <span class="rounded tag ip">Image Processing</span>
@@ -373,15 +345,18 @@
                                     </button>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">Advanced Farming</h5>
+                                <a class="project_title" data-toggle="collapse" href="#advanced_farming" role="button" aria-expanded="false" aria-controls="advanced_farming">
+                                        <h5 class="card-header font-weight-bold">Advanced Farming</h5></a>
+                                    
+                                    <div class="collapse show" id="advanced_farming">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam, atque. ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                                    animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste iure
-                                    optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">An Android application that was built using a touchless UI philosophy. It is for farmers who aren't so well-versed 
+                                with touchscreen smartphones. The farmer can report issues, contact authorities or get their work done using their 
+                                voice commands. The was built in a day for a 24hr Hackathon.</p>
                                 <div class="row">
                                     <span class="rounded tag android">Android</span>
                                     <span class="rounded tag mysql">MySQL</span>
@@ -391,33 +366,17 @@
                                     </button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">DigiDoc</h5>
-                            <div class="card-body">
-
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam, atque. ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                                    animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste iure
-                                    optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
-                                <div class="row">
-                                    <span class="rounded tag react">React Native</span>
-                                    <span class="rounded tag node">Node</span>
-                                    <span class="rounded tag mysql">MySQL</span>
-                                    <button class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         <div class="card shadow">
-                            <h5 class="card-header font-weight-bold">Live Sketch</h5>
+                                <a class="project_title" data-toggle="collapse" href="#live_sketch" role="button" aria-expanded="false" aria-controls="live_sketch">
+                                        <h5 class="card-header font-weight-bold">Live Sketch</h5></a>
+                                    
+                                    <div class="collapse show" id="live_sketch">
                             <div class="card-body">
 
-                                <p class="card-text">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aperiam, atque. ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                                    animi aperiam aut autem cumque dicta distinctio dolores facilis, fugiat iste iure
-                                    optio quasi, sed soluta vitae voluptatem voluptates, voluptatibus.</p>
+                                <p class="card-text">This is a basic real-time conversion of images captured from webcam to sketch. I am planning to integrate Neural 
+                                Style Transfer in this and also will be trying to integrate some filters using landmark detection.</p>
                                 <div class="row">
                                     <span class="rounded tag ip">Image Processing</span>
                                     <span class="rounded tag python">Python</span>
@@ -426,6 +385,7 @@
                                     </button>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -457,8 +417,7 @@
                         </div>
 
                         <div class="col-lg-8 col-sm-12 p-2 text-center">
-                            <p class="text-muted">Was an intern for a startup for almost an year. Worked as a React
-                                Native Developer.</p>
+                            <p class="text-muted">React Native Developer (Intern) for a year at Digiklug Ltd.</p>
                         </div>
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
@@ -470,7 +429,7 @@
                                     Programmer's Club</a> currently in college.
                                 <br>Was a speaker at a workshop on Android Development organized by the club.
                                 <br>Part of the Core & Technical committee that organized <a href="http://csimhssce.in/err_404/">ERR_404</a>
-                                State Level Hackathon</p>
+                                State Level Hackathon.</p>
                         </div>
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
