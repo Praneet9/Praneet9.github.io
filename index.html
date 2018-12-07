@@ -5,16 +5,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,minimum-scale=1,maximum-scale=1,user-scalable=no">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="css/styles.css">
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+
     <title>Praneet Bomma</title>
 </head>
 
@@ -34,7 +33,7 @@
         <header class="header">
             <nav class="navbar container navbar-expand-lg p-0 navbar-custom">
 
-                <div class="navbar-header align-items-center float-left">
+                <div class="navtitle navbar-header align-items-center float-left">
 
                     <a class="navbar-brand" href="#">
                         <span class="brand-text inline-block font-weight-bold text-dark">praneetbomma</span>
@@ -49,11 +48,11 @@
                 </button>
                 <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_links">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a data-scroll class="btn btn-block text-dark links" href="#about">About</a></li>
-                        <li><a data-scroll class="btn btn-block text-dark links" href="#skills">Skills</a></li>
-                        <li><a data-scroll class="btn btn-block text-dark links" href="#projects">Projects</a></li>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#about">About</a></li>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#skills">Skills</a></li>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#projects">Projects</a></li>
 
-                        <li class="pr-btn"><a href="Praneet.pdf" class="btn btn-block btn-outline-secondary">Resume</a></li>
+                        <li class="pr-btn"><a href="Praneet.pdf" class="navlinks btn btn-block btn-outline-secondary" style="color: inherit;">Resume</a></li>
                     </ul>
                 </div>
 
@@ -67,20 +66,20 @@
                 <div id="landing_content" class="text-center container align-content-center align-self-center" style="margin-top: 0">
                     <img id="hi_img" src="assets/hi.png" alt="">
                     <h1 class="font-weight-bold" id="name">I'm Praneet Bomma</h1>
-                    <span class="font-weight-bold" id="developer"><img src="assets/Python-logo-notext.svg" alt="">
-                        &nbsp;Developer</span>
+                    <!-- <span class="font-weight-bold" id="developer"><img src="assets/Python-logo-notext.svg" alt="">
+                        &nbsp;Developer</span> -->
 
                     <p id="myDescription">Started as an Android Developer, tried my hands at Web Development.
                         <br>Finally, aspiring to be a Data Scientist!
                         <br>I have miles to go. But, what's the fun if it's easy!
                     </p>
 
-                    <button type="button" class="btn"><a href="Praneet.pdf" style="text-decoration: none; color: #ffffff">Download
+                    <button type="button" class="btn" id="dwresume"><a href="Praneet.pdf" style="text-decoration: none; color: #ffffff">Download
                             Resume</a></button>
 
-                    <!--<div id="downbutton">-->
-                    <!--<i class="fa fa-arrow-down"></i>-->
-                    <!--</div>-->
+                    <div id="downbutton">
+                    <a href="#skills"><i class="fa fa-chevron-down"></i></a>
+                    </div>
                 </div>
 
             </div>
@@ -257,135 +256,161 @@
 
                 <div class="row mt-5">
                     <div class="card-columns mt-5">
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#smart_editor" role="button" aria-expanded="true" aria-controls="smart_editor">
-                                        <h5 class="card-header font-weight-bold">Smart Editor</h5></a>
-                                    
-                                    <div class="collapse show" id="smart_editor">
-                            <div class="card-body">
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#smart_editor" role="button"
+                                aria-expanded="true" aria-controls="smart_editor">
+                                <h5 class="card-header font-weight-bold">Smart Editor</h5>
+                            </a>
 
-                                <p class="card-text">A web app to convert handwritten forms to digital forms. Initially you are supposed to upload a template
-                                of your form that isn't filled. That is only a one time task. If the templates of your form is already available, you just need to
-                                upload your handwritten form and it will be converted to digital text. It was developed using Deep Learning & Image Processing
-                                and uses Flask as the back-end framework. </p>
-                                <div class="row">
-                                    <span class="rounded tag ml">Machine Learning</span>
-                                    <span class="rounded tag ip">Image Processing</span>
-                                    <span class="rounded tag mongo">MongoDB</span>
-                                    <span class="rounded tag web">Web</span>
-                                    <span class="rounded tag python">Python</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/Smart_Editor" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
-                                </div>
+                            <div class="collapse show" id="smart_editor">
+                                <div class="card-body">
 
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#voices_of_mumbai" role="button" aria-expanded="false" aria-controls="voices_of_mumbai">
-                                        <h5 class="card-header font-weight-bold">Voices of Mumbai</h5></a>
-                                    
-                                    <div class="collapse show" id="voices_of_mumbai">
-                            <div class="card-body">
+                                    <p class="card-text">A web app to convert handwritten forms to digital forms.
+                                        Initially you are supposed to upload a template
+                                        of your form that isn't filled. That is only a one time task. If the templates
+                                        of your form is already available, you just need to
+                                        upload your handwritten form and it will be converted to digital text. It was
+                                        developed using Deep Learning & Image Processing
+                                        and uses Flask as the back-end framework. </p>
+                                    <div class="row">
+                                        <span class="rounded tag ml">Machine Learning</span>
+                                        <span class="rounded tag ip">Image Processing</span>
+                                        <span class="rounded tag mongo">MongoDB</span>
+                                        <span class="rounded tag web">Web</span>
+                                        <span class="rounded tag python">Python</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/Smart_Editor" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
 
-                                <p class="card-text">A service for people to report the issues they face daily to the authorities. Currently it is mainly 
-                                concentrating on reporting potholes in the area. It can be scaled to different issues as well. I'm continuing working on 
-                                this project and aiming to integrate Deep Learning in it.</p>
-                                <div class="row">
-                                    <span class="rounded tag ml">Machine Learning</span>
-                                    <span class="rounded tag ip">Image Processing</span>
-                                    <span class="rounded tag mongo">MongoDB</span>
-                                    <span class="rounded tag web">Web</span>
-                                    <span class="rounded tag python">Python</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/Voices_of_Mumbai" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
-                                </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#e_checkin" role="button" aria-expanded="false" aria-controls="e_checkin">
-                                        <h5 class="card-header font-weight-bold">E-CheckIn</h5></a>
-                                    
-                                    <div class="collapse show" id="e_checkin">
-                            <div class="card-body">
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#voices_of_mumbai" role="button"
+                                aria-expanded="false" aria-controls="voices_of_mumbai">
+                                <h5 class="card-header font-weight-bold">Voices of Mumbai</h5>
+                            </a>
 
-                                <p class="card-text">An Android application that can be used to check-in registered participants using the QR Code that was sent 
-                                after successfull registration. It was specially built to use during ERR_404 State Level Hackathon. This app can help avoid 
-                                long queues and organize an event better.</p>
-                                <div class="row">
-                                    <span class="rounded tag android">Android</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/ECheckIn" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#plant_monitoring" role="button" aria-expanded="false" aria-controls="plant_monitoring">
-                                        <h5 class="card-header font-weight-bold">Plant Monitoring</h5></a>
-                                    
-                                    <div class="collapse show" id="plant_monitoring">
-                            <div class="card-body">
+                            <div class="collapse show" id="voices_of_mumbai">
+                                <div class="card-body">
 
-                                <p class="card-text">A deep learning based system for disorder detection in tomato plants. Also using IoT to get sensor data 
-                                from the plants. This project is currently under development. This model is currently trained on images. It will further be 
-                                trained on sensor data. The sensors are set-up and data collection is under process.</p>
-                                <div class="row">
-                                    <span class="rounded tag ml">Machine Learning</span>
-                                    <span class="rounded tag ip">Image Processing</span>
-                                    <span class="rounded tag mongo">MongoDB</span>
-                                    <span class="rounded tag web">Web</span>
-                                    <span class="rounded tag python">Python</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/Plant_Monitor" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#advanced_farming" role="button" aria-expanded="false" aria-controls="advanced_farming">
-                                        <h5 class="card-header font-weight-bold">Advanced Farming</h5></a>
-                                    
-                                    <div class="collapse show" id="advanced_farming">
-                            <div class="card-body">
-
-                                <p class="card-text">An Android application that was built using a touchless UI philosophy. It is for farmers who aren't so well-versed 
-                                with touchscreen smartphones. The farmer can report issues, contact authorities or get their work done using their 
-                                voice commands. The was built in a day for a 24hr Hackathon.</p>
-                                <div class="row">
-                                    <span class="rounded tag android">Android</span>
-                                    <span class="rounded tag mysql">MySQL</span>
-                                    <span class="rounded tag web">Web</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/Advanced-Farming" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                                <a class="project_title" data-toggle="collapse" href="#live_sketch" role="button" aria-expanded="false" aria-controls="live_sketch">
-                                        <h5 class="card-header font-weight-bold">Live Sketch</h5></a>
-                                    
-                                    <div class="collapse show" id="live_sketch">
-                            <div class="card-body">
-
-                                <p class="card-text">This is a basic real-time conversion of images captured from webcam to sketch. I am planning to integrate Neural 
-                                Style Transfer in this and also will be trying to integrate some filters using landmark detection.</p>
-                                <div class="row">
-                                    <span class="rounded tag ip">Image Processing</span>
-                                    <span class="rounded tag python">Python</span>
-                                    <a target="_blank" href="https://github.com/Praneet9/Live_Sketch" class="btn btn-outline-secondary viewgithub">
-                                        View on Github
-                                    </a>
+                                    <p class="card-text">A service for people to report the issues they face daily to
+                                        the authorities. Currently it is mainly
+                                        concentrating on reporting potholes in the area. It can be scaled to different
+                                        issues as well. I'm continuing working on
+                                        this project and aiming to integrate Deep Learning in it.</p>
+                                    <div class="row">
+                                        <span class="rounded tag ml">Machine Learning</span>
+                                        <span class="rounded tag ip">Image Processing</span>
+                                        <span class="rounded tag mongo">MongoDB</span>
+                                        <span class="rounded tag web">Web</span>
+                                        <span class="rounded tag python">Python</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/Voices_of_Mumbai" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#e_checkin" role="button"
+                                aria-expanded="false" aria-controls="e_checkin">
+                                <h5 class="card-header font-weight-bold">E-CheckIn</h5>
+                            </a>
+
+                            <div class="collapse show" id="e_checkin">
+                                <div class="card-body">
+
+                                    <p class="card-text">An Android application that can be used to check-in registered
+                                        participants using the QR Code that was sent
+                                        after successfull registration. It was specially built to use during ERR_404
+                                        State Level Hackathon. This app can help avoid
+                                        long queues and organize an event better.</p>
+                                    <div class="row">
+                                        <span class="rounded tag android">Android</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/ECheckIn" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#plant_monitoring" role="button"
+                                aria-expanded="false" aria-controls="plant_monitoring">
+                                <h5 class="card-header font-weight-bold">Plant Monitoring</h5>
+                            </a>
+
+                            <div class="collapse show" id="plant_monitoring">
+                                <div class="card-body">
+
+                                    <p class="card-text">A deep learning based system for disorder detection in tomato
+                                        plants. Also using IoT to get sensor data
+                                        from the plants. This project is currently under development. This model is
+                                        currently trained on images. It will further be
+                                        trained on sensor data. The sensors are set-up and data collection is under
+                                        process.</p>
+                                    <div class="row">
+                                        <span class="rounded tag ml">Machine Learning</span>
+                                        <span class="rounded tag ip">Image Processing</span>
+                                        <span class="rounded tag mongo">MongoDB</span>
+                                        <span class="rounded tag web">Web</span>
+                                        <span class="rounded tag python">Python</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/Plant_Monitor" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#advanced_farming" role="button"
+                                aria-expanded="false" aria-controls="advanced_farming">
+                                <h5 class="card-header font-weight-bold">Advanced Farming</h5>
+                            </a>
+
+                            <div class="collapse show" id="advanced_farming">
+                                <div class="card-body">
+
+                                    <p class="card-text">An Android application that was built using a touchless UI
+                                        philosophy. It is for farmers who aren't so well-versed
+                                        with touchscreen smartphones. The farmer can report issues, contact authorities
+                                        or get their work done using their
+                                        voice commands. The was built in a day for a 24hr Hackathon.</p>
+                                    <div class="row">
+                                        <span class="rounded tag android">Android</span>
+                                        <span class="rounded tag mysql">MySQL</span>
+                                        <span class="rounded tag web">Web</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/Advanced-Farming" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card reveal shadow">
+                            <a class="project_title" data-toggle="collapse" href="#live_sketch" role="button"
+                                aria-expanded="false" aria-controls="live_sketch">
+                                <h5 class="card-header font-weight-bold">Live Sketch</h5>
+                            </a>
+
+                            <div class="collapse show" id="live_sketch">
+                                <div class="card-body">
+
+                                    <p class="card-text">This is a basic real-time conversion of images captured from
+                                        webcam to sketch. I am planning to integrate Neural
+                                        Style Transfer in this and also will be trying to integrate some filters using
+                                        landmark detection.</p>
+                                    <div class="row">
+                                        <span class="rounded tag ip">Image Processing</span>
+                                        <span class="rounded tag python">Python</span>
+                                        <a target="_blank" href="https://github.com/Praneet9/Live_Sketch" class="btn btn-outline-secondary viewgithub">
+                                            View on Github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -396,7 +421,7 @@
 
                 <h1 class="font-weight-bold text-center text-uppercase">About Me</h1>
 
-                <div class="shadow p-5 mt-5 bg-white">
+                <div class="shadow p-5 mt-5 bg-white" id="about_card">
 
                     <div class="row">
 
@@ -460,7 +485,7 @@
                     </div>
 
                     <div class="col-lg-6 col-sm-12 align-self-center text-center pt-3">
-                        <div class="row col-12 mt-2 mb-2 ml-0 justify-content-center">
+                        <div id="myemail" class="row col-12 mt-2 mb-2 ml-0 justify-content-center">
                             <h4 class="font-weight-bold">Reach me at
                                 <hr>praneetbomma@gmail.com</h4>
                         </div>
@@ -477,7 +502,8 @@
                             <a target="_blank" href="https://github.com/Praneet9"><img src="assets/github-logo.svg" alt=""></a>
                             <a target="_blank" href="https://www.linkedin.com/in/praneet9/"><img src="assets/LinkedIn_logo_initials.png"
                                     alt=""></a>
-                            <a target="_blank" href="https://www.facebook.com/IamPraneet"><img src="assets/F_icon.svg" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/IamPraneet"><img src="assets/F_icon.svg"
+                                    alt=""></a>
                             <a target="_blank" href="https://www.instagram.com/i_am_praneet/"><img src="assets/Instagram_logo_2016.svg"
                                     alt=""></a>
                         </span>
@@ -486,22 +512,9 @@
                         <h3 class="font-weight-bold">praneetbomma</h3>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 pt-3 pb-3">
-                        <span><i class="fa fa-paint-brush"></i> by gnasherx <i class="fa fa-code"></i> by praneetbomma</span>
+                        <h6 class="font-weight-bold">Thank you <a href="https://github.com/gnasherx" style="text-decoration: none; color: inherit">gnasherx</a>
+                            for design inspirations <i class="fa fa-heart" style="color: red;"></i></h6>
                     </div>
-                </div>
-                <div class="bg-dark" style="padding-bottom: 10px; padding-top: 10px">
-                    <a href="https://github.com/gnasherx" style="text-decoration: none">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 text-center font-italic text-white-50">
-                                    <h4>
-                                        Thank you for the whole design gnasherx. Without your lovely design and inputs,
-                                        this wouldn't have been possible!
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </footer>
 
@@ -510,26 +523,12 @@
     </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/main.js"></script>
-
-    <script>
-
-        var overlay = document.getElementById("loader");
-
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                overlay.style.display = 'none';
-                document.getElementById("body").style.display = 'inline';
-            }, 1000);
-        })
-
-
-    </script>
 
 </body>
 

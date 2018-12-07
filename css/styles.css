@@ -25,6 +25,15 @@ use {
 
 /********************************** Global **********************************/
 
+html.sr .reveal, 
+html.sr #hi_img, 
+html.sr #name, 
+html.sr #developer,
+ html.sr #myDescription, html.sr #dwresume, html.sr .navtitle, html.sr .navlinks {
+    visibility: hidden;
+  }
+  
+
 body{
     margin: 0;
     padding: 0;
