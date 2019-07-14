@@ -59,64 +59,64 @@ p {
 }
 
 .tag {
-    padding: 7px;
-    margin: 5px;
-    font-size: 14px;
+    padding: 6px;
+    margin: 6px;
+    font-size: 13px;
     border: solid 1px
 }
 
 .ml {
     border-color: #3F46AD;
     color: #3F46AD;
-    background-color: #EFF0FF;
+    /* background-color: #EFF0FF; */
 }
 
 .ip {
     border-color: #178CCC;
     color: #178CCC;
-    background-color: #F1F6F9;
+    /* background-color: #F1F6F9; */
 }
 
 .python {
     border-color: #EC2A70;
     color: #EC2A70;
-    background-color: #F9EBF0;
+    /* background-color: #F9EBF0; */
 }
 
 .android {
     border-color: #1E8F53;
     color: #1E8F53;
-    background-color: #C5FFE0;
+    /* background-color: #C5FFE0; */
 }
 
 .mongo {
     border-color: #F9B644;
     color: #F9B644;
-    background-color: #F8EFE0;
+    /* background-color: #F8EFE0; */
 }
 
 .mysql {
     border-color: #8F5E1E;
     color: #8F5E1E;
-    background-color: #FFE8CB;
+    /* background-color: #FFE8CB; */
 }
 
 .react {
     border-color: rgb(13, 124, 184);
     color: rgb(15, 115, 168);
-    background-color: rgb(203, 225, 238);
+    /* background-color: rgb(203, 225, 238); */
 }
 
 .node {
     border-color: #FF2E2E;
     color: #FF2E2E;
-    background-color: #FFD9D9;
+    /* background-color: #FFD9D9; */
 }
 
 .web {
     border-color: #A6D864;
     color: #A6D864;
-    background-color: #E8FBD0;
+    /* background-color: #E8FBD0; */
 }
 
 /********************************** Navbar **********************************/
@@ -352,6 +352,13 @@ footer {
 /* Iphone 6 Plus*/
 @media (max-width: 575.98px) {
 
+    .tag {
+        padding: 4px;
+        margin: 4px;
+        font-size: 12px;
+        border: solid 1px
+    }
+
     h1 {
         font-size: 26px;
     }
@@ -438,6 +445,13 @@ footer {
  /*Small devices (landscape phones, 576px and up)*/
 /* Iphone 6 Plus landscape*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    .tag {
+        padding: 5px;
+        margin: 5px;
+        font-size: 13px;
+        border: solid 1px
+    }
 
     h1 {
         font-size: 27px;
