@@ -1,0 +1,643 @@
+/********************************** Loading Screen **********************************/
+
+#body {
+    display: none;
+}
+
+svg {
+    margin-top: 20%;
+    max-width: 10em;
+    /*border-radius: 3px;*/
+    /*box-shadow: 2px 2px 5px #fff;*/
+    background: #F5F5F5;
+    fill: none;
+    stroke: #CFD8DC;
+    stroke-linecap: round;
+    stroke-width: 5%
+}
+
+use {
+    stroke: #000;
+    animation: a 1.5s linear infinite
+}
+
+@keyframes a { to { stroke-dashoffset: 0px } }
+
+/********************************** Global **********************************/
+
+html.sr .reveal, 
+html.sr #hi_img, 
+html.sr #name, 
+html.sr #developer,
+html.sr #myDescription, 
+html.sr #dwresume, 
+html.sr .navtitle, 
+html.sr .navlinks {
+visibility: hidden;
+}
+  
+.light-mode, .links .light-mode {
+    color: #212529;
+}
+
+.dark-mode {
+    color: #D9D9D9;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background: #F5F5F5; */
+    background: #191919;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.tag {
+    padding: 6px;
+    margin: 6px;
+    font-size: 13px;
+    border: solid 1px
+}
+
+.ml {
+    border-color: #3F46AD;
+    color: #3F46AD;
+    /* background-color: #EFF0FF; */
+}
+
+.ip {
+    border-color: #178CCC;
+    color: #178CCC;
+    /* background-color: #F1F6F9; */
+}
+
+.python {
+    border-color: #EC2A70;
+    color: #EC2A70;
+    /* background-color: #F9EBF0; */
+}
+
+.android {
+    border-color: #1E8F53;
+    color: #1E8F53;
+    /* background-color: #C5FFE0; */
+}
+
+.mongo {
+    border-color: #F9B644;
+    color: #F9B644;
+    /* background-color: #F8EFE0; */
+}
+
+.mysql {
+    border-color: #8F5E1E;
+    color: #8F5E1E;
+    /* background-color: #FFE8CB; */
+}
+
+.react {
+    border-color: rgb(13, 124, 184);
+    color: rgb(15, 115, 168);
+    /* background-color: rgb(203, 225, 238); */
+}
+
+.node {
+    border-color: #FF2E2E;
+    color: #FF2E2E;
+    /* background-color: #FFD9D9; */
+}
+
+.web {
+    border-color: #A6D864;
+    color: #A6D864;
+    /* background-color: #E8FBD0; */
+}
+
+/********************************** Navbar **********************************/
+
+.header {
+    /* border-bottom: #e2e3e5 1px solid; */
+    border-bottom: #262626 2px solid;
+    /* background-color: #F5F5F5; */
+    background-color: #191919;
+    position: fixed;
+    z-index: 555;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 5px 10px;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+}
+
+nav {
+    padding: 15px;
+}
+
+#navbar_links li {
+    padding: 10px
+}
+
+nav li:hover {
+    color: #fff;
+}
+
+nav li a:hover {
+    border: #6c757d 1px solid;
+}
+
+.links {
+    color: #fff;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+/********************************** Landing **********************************/
+
+#landing {
+    padding-top: 100px;
+    /*padding-bottom: 100px;*/
+    position: relative;
+    background-image: url('../assets/simple-codelines.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    /*min-height: 100vh;*/
+}
+
+#hi_img {
+    /*margin-top: 50px;*/
+    width: 50px;
+    height: 50px;
+}
+
+#name {
+    padding-top: 15px
+}
+
+#developer {
+    padding-top: 5px;
+}
+
+#developer img {
+    width: 25px;
+    height: 25px;
+}
+
+#myDescription {
+    /*font-size: 20px;*/
+    padding-top: 70px;
+}
+
+#landing_content button {
+    margin-top: 50px;
+    background: #39B27B;
+    color: #FFFFFF
+}
+
+#landing_content i {
+    color: #6c757d;
+    margin-top: 80px;
+}
+
+/********************************** Technologies **********************************/
+
+#skills {
+    padding-top: 100px;
+    /*padding-bottom: 100px;*/
+}
+
+#skill_level {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* .skill_level {
+    width: 20px;
+    height: 20px;
+} */
+
+.skills {
+    /* border: #EEEEEE solid 0.1px; */
+    border: #262626 solid 0.1px;
+
+}
+
+.skill_detail {
+    display: inline;
+}
+
+.skill_detail h4 {
+    margin-bottom: 25px;
+}
+
+.skill_img {
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    /* background: #E0E0E0; */
+    background: #262626;
+    padding: 10px;
+}
+
+.skill_level_img {
+    position:absolute;
+    bottom: 15px;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 15px;
+}
+
+.skill_level_img img, .skill_level {
+    width: 28px;
+    height: 28px;
+}
+
+.skills p {
+    margin-top: 20px;
+}
+
+/********************************** Projects **********************************/
+
+#projects {
+    padding-top: 100px;
+    /*padding-bottom: 100px;*/
+}
+
+#project_carousel .card {
+    border: none;
+}
+
+.projectdepth {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.25) !important;
+}
+
+.card-columns {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.viewgithub {
+    width: 100%;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project_title {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project_title:hover {
+    text-decoration: none;
+}
+
+/********************************** About **********************************/
+
+#about {
+    padding-top: 100px;
+}
+
+.card-body-dark {
+    background: #262626;
+    /* margin-top: 30px; */
+}
+
+.card-header {
+    background: #212121;
+}
+
+.card-body-light {
+    background: #ffffff;
+    /* margin-top: 30px; */
+}
+
+/********************************** HireMe **********************************/
+
+#hireme {
+    padding-top: 100px;
+}
+
+#hiremesvg {
+    width: 400px;
+    height: 400px
+}
+
+#interested {
+    font-size: 80px;
+    color: #E0E0E0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#hire_header {
+    position: relative;
+    top: -20px;
+}
+
+/********************************** Footer **********************************/
+
+footer {
+    /* border-top: #EEEEEE solid 2px; */
+    border-top: #262626 2px solid;
+    padding-top: 10px;
+}
+
+#social_links {
+
+}
+#social_links img {
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px
+}
+
+/********************************** Media Queries **********************************/
+
+ /*Extra small devices (portrait phones, less than 576px)*/
+/* Iphone 6 Plus*/
+@media (max-width: 575.98px) {
+
+    .tag {
+        padding: 4px;
+        margin: 4px;
+        font-size: 12px;
+        border: solid 1px
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #loader {
+        padding-top: 50%;
+    }
+
+    #landing_content {
+
+    }
+
+    #hiremesvg {
+        width: 200px;
+        height: 200px
+    }
+
+    #hire_header {
+        position: relative;
+        top: -15px;
+    }
+
+    #interested {
+        font-size: 50px;
+    }
+
+    .projectdepth {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #navbar_links {
+        min-height: 100vh;
+    }
+
+
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header #navbar_links {
+        background: transparent url("../assets/6001x.png");
+    }
+
+    nav .navbar-brand {
+        padding-left: 10px;
+        margin-right: 0;
+    }
+
+    .navbar-toggler {
+        padding-right: 15px;
+    }
+
+    #hi_img {
+        /*margin-top: 20px;*/
+        width: 35px;
+        height: 35px;
+    }
+
+    .skill_level_img img, .skill_level {
+        width: 22px;
+        height: 22px;
+    }
+
+    /*.card-columns {*/
+        /*column-count: 2;*/
+    /*}*/
+
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+/* Iphone 6 Plus landscape*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .tag {
+        padding: 5px;
+        margin: 5px;
+        font-size: 13px;
+        border: solid 1px
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header #navbar_links {
+        background: rgba(0, 120, 0, 0.7) url("../assets/6001x.png");
+    }
+
+    #navbar_links {
+        min-height: 100vh;
+    }
+
+    .card-columns {
+        column-count: 2;
+    }
+
+    #hiremesvg {
+        width: 250px;
+        height: 250px
+    }
+
+    #hi_img {
+        /*margin-top: 30px;*/
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill_level_img img, .skill_level {
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+/* Amzon Kindle landscape and Ipad landscape*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    h5 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .card-columns {
+        column-count: 2;
+    }
+
+    #hiremesvg {
+        width: 275px;
+        height: 275px
+    }
+
+    #hi_img {
+        /*margin-top: 40px;*/
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill_level_img img, .skill_level {
+        width: 26px;
+        height: 26px;
+    }
+
+}
+
+ /*Large devices (desktops, 992px and up)*/
+/* Ipad Mini 2 */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #landing {
+        background-image: url("../assets/6001x.png");
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    #hiremesvg {
+        width: 300px;
+        height: 300px
+    }
+
+    #hi_img {
+        /*margin-top: 45px;*/
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+/* Kindle */
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}

@@ -23,7 +23,7 @@ animate.reveal('#myemail', { distance: '100px', origin: 'bottom', delay: 200 });
 
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 5,
+    margin: 10,
     nav: false,
     responsive: {
         0: {
