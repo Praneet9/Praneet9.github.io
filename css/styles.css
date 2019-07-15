@@ -181,8 +181,9 @@ nav li a:hover {
     height: 50px;
 }
 
-#name {
-    padding-top: 15px
+#face_img {
+    width: 240px;
+    height: 200px;
 }
 
 #developer {
@@ -196,18 +197,18 @@ nav li a:hover {
 
 #myDescription {
     /*font-size: 20px;*/
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 #landing_content button {
-    margin-top: 50px;
+    margin-top: 25px;
     background: #39B27B;
     color: #FFFFFF
 }
 
 #landing_content i {
     color: #6c757d;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 /********************************** Technologies **********************************/
@@ -431,6 +432,11 @@ footer {
         height: 35px;
     }
 
+    #face_img {
+        width: 200px;
+        height: 175px;
+    }
+
     .skill_level_img img, .skill_level {
         width: 22px;
         height: 22px;
@@ -497,6 +503,11 @@ footer {
         height: 40px;
     }
 
+    #face_img {
+        width: 210px;
+        height: 185px;
+    }
+
     .skill_level_img img, .skill_level {
         width: 24px;
         height: 24px;
@@ -539,6 +550,11 @@ footer {
         height: 45px;
     }
 
+    #face_img {
+        width: 220px;
+        height: 190px;
+    }
+
     .skill_level_img img, .skill_level {
         width: 26px;
         height: 26px;
@@ -579,6 +595,11 @@ footer {
         /*margin-top: 45px;*/
         width: 48px;
         height: 48px;
+    }
+
+    #face_img {
+        width: 230px;
+        height: 195px;
     }
 
 }
