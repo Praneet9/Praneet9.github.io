@@ -40,6 +40,10 @@ html.sr .navtitle,
 html.sr .navlinks {
 visibility: hidden;
 }
+
+#toggle-mode:hover {
+    cursor: pointer;
+}
   
 .light-mode, .links .light-mode {
     color: #212529;
