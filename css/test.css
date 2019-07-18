@@ -1,5 +1,10 @@
 /********************************** Loading Screen **********************************/
 
+/* dark-body, light-body
+dark-mode, light-mode
+btn-outline-light, btn-outline-dark */
+
+
 #body {
     display: none;
 }
@@ -48,6 +53,34 @@ visibility: hidden;
     background: #191919;
 }
 
+.light-body nav li a:hover {
+    color: #212529;
+    border: #6c757d 1px solid;
+}
+
+.dark-body nav li a:hover {
+    color: #D9D9D9;
+    border: #E0E0E0 1px solid;
+}
+
+.light-body .pr-btn a:hover {
+    color: #F5F5F5;
+    /* border: #6c757d 1px solid; */
+}
+
+.dark-body .pr-btn a:hover {
+    color: #212529;
+    /* border: #E0E0E0 1px solid; */
+}
+
+.btn-outline-dark {
+    color: #212529;
+}
+
+.btn-outline-light {
+    color: #F5F5F5;
+}
+
 .dark-body .header {
     background-color: #191919;
     border-bottom: #262626 2px solid;
@@ -75,7 +108,7 @@ visibility: hidden;
 }
 
 .dark-body #landing {
-    background-image: url('../assets/simple-codelines (1).svg');
+    background-image: url('../assets/dark-codelines.svg');
 }
 
 .light-body .skills {
@@ -254,6 +287,7 @@ nav li:hover {
 }
 
 nav li a:hover {
+    color: #212529;
     border: #6c757d 1px solid;
 }
 
@@ -396,7 +430,7 @@ nav li a:hover {
 
 .viewgithub {
     width: 100%;
-    color: #000000;
+    /* color: #000000; */
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;

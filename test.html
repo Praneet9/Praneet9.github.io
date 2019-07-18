@@ -41,7 +41,10 @@
                     <a class="navbar-brand" href="#">
                         <span class="brand-text inline-block font-weight-bold dark-mode">praneetbomma</span>
                     </a>
-
+                    <a class="inline pb-3" name='dark-mode' id="toggle-mode" onclick="changeMode()" style="text-decoration: none">
+                        <img class="mb-1" src="assets/sun.png" width="25px" height="25px" alt="">
+                        <span class="dark-mode">Light Mode</span>
+                    </a>
                 </div>
 
                 <button type="button" class="navbar-toggle navbar-toggler collapsed bg-transparent border-0"
@@ -56,8 +59,8 @@
                         <li><a data-scroll class="navlinks btn btn-block dark-mode" href="#projects">Projects</a>
                         </li>
 
-                        <li class="pr-btn"><a href="Praneet.pdf" class="navlinks btn btn-block btn-outline-secondary"
-                                style="color: inherit;">Resume</a></li>
+                        <li class="pr-btn"><a href="Praneet.pdf" class="navlinks btn btn-block btn-outline-light"
+                                >Resume</a></li>
                     </ul>
                 </div>
 
@@ -286,7 +289,7 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Smart_Editor"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -307,7 +310,7 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Voices_of_Mumbai"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -331,7 +334,7 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Docify"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -348,7 +351,7 @@
                             <div class="row">
                                 <span class="rounded tag android">Android</span>
                                 <a target="_blank" href="https://github.com/Praneet9/ECheckIn"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -367,7 +370,7 @@
                                 <span class="rounded tag ip">Image Processing</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/YOLO"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -389,7 +392,7 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Plant_Monitor"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -408,7 +411,7 @@
                                 <span class="rounded tag mysql">MySQL</span>
                                 <span class="rounded tag web">Web</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Advanced-Farming"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
@@ -425,15 +428,15 @@
                                 <span class="rounded tag ip">Image Processing</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Live_Sketch"
-                                    class="btn btn-outline-secondary viewgithub">
+                                    class="btn btn-outline-light viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-outline-secondary btn-sm prev-btn"><</button>
-                <button class="btn btn-outline-secondary btn-sm next-btn">></button>
+                <button class="btn btn-outline-light btn-sm prev-btn"><</button>
+                <button class="btn btn-outline-light btn-sm next-btn">></button>
 
             </section>
 
@@ -558,6 +561,53 @@
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        function changeMode() {
+        var toggle = document.getElementById('toggle-mode');
+        var toggle_img = toggle.children[0]
+        var toggle_span = toggle.children[1]
+        if (toggle_span.className === 'dark-mode') {
+            var found = true
+            while(found == true) {
+                var dark_mode = document.getElementsByClassName('dark-mode')
+                if (dark_mode.length == 0) {
+                    found = false;
+                }
+                for (var idx = 0; idx < dark_mode.length; idx++) {
+                    dark_mode[idx].classList.replace('dark-mode', 'light-mode');
+                }
+            }
+            found = true;
+            while(found == true) {
+                var dark_mode = document.getElementsByClassName('dark-body')
+                if (dark_mode.length == 0) {
+                    found = false;
+                }
+                for (var idx = 0; idx < dark_mode.length; idx++) {
+                    dark_mode[idx].classList.replace('dark-body', 'light-body');
+                }
+            }
+            found = true;
+            while(found == true) {
+                var dark_mode = document.getElementsByClassName('btn-outline-light')
+                if (dark_mode.length == 0) {
+                    found = false;
+                }
+                for (var idx = 0; idx < dark_mode.length; idx++) {
+                    dark_mode[idx].classList.replace('btn-outline-light', 'btn-outline-dark');
+                }
+            }
+        }
+        else if (toggle_span.className === 'light-mode') {
+            var light_mode = document.getElementsByClassName('light-mode')
+            for (var idx = 0; idx < dark_mode.length; idx++) {
+                light_mode[idx].classList.remove('light-mode');
+                light_mode[idx].classList.add('dark-mode');
+            }
+        }
+        }
+
+    </script>
 </body>
 
 </html>
