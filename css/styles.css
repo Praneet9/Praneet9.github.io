@@ -572,7 +572,7 @@ footer {
     }
 
     #navbar_links {
-        min-height: 100vh;
+        height: fit-content;
     }
 
 
@@ -653,7 +653,7 @@ footer {
     }
 
     #navbar_links {
-        min-height: 100vh;
+        height: fit-content;
     }
 
     .card-columns {
