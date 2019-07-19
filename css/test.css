@@ -1,10 +1,5 @@
 /********************************** Loading Screen **********************************/
 
-/* dark-body, light-body
-dark-mode, light-mode
-btn-outline-light, btn-outline-dark */
-
-
 #body {
     display: none;
 }
@@ -14,11 +9,28 @@ svg {
     max-width: 10em;
     /*border-radius: 3px;*/
     /*box-shadow: 2px 2px 5px #fff;*/
+    stroke-linecap: round;
+    stroke-width: 5%
+}
+
+.dark-body svg {
+    background: #191919;
+    fill: none;
+    stroke: #333333;
+}
+
+.dark-body use {
+    stroke: #F5F5F5;
+}
+
+.light-body use {
+    stroke: #000;
+}
+
+.light-body svg {
     background: #F5F5F5;
     fill: none;
     stroke: #CFD8DC;
-    stroke-linecap: round;
-    stroke-width: 5%
 }
 
 use {
@@ -36,8 +48,7 @@ html.sr #name,
 html.sr #developer,
 html.sr #myDescription, 
 html.sr #dwresume, 
-html.sr .navtitle, 
-html.sr .navlinks {
+html.sr .navtitle {
 visibility: hidden;
 }
 
