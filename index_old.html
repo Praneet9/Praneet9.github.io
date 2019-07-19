@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link type="text/css" rel="stylesheet" href="css/test.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
 </head>
 
-<body class="light-body">
+<body>
 
     <div id="loader" class="justify-content-center align-content-between text-center">
 
@@ -39,29 +39,25 @@
                 <div class="navtitle navbar-header align-items-center float-left">
 
                     <a class="navbar-brand" href="#">
-                        <span class="brand-text inline-block font-weight-bold light-mode">praneetbomma</span>
+                        <span class="brand-text inline-block font-weight-bold text-dark">praneetbomma</span>
                     </a>
-                    <a class="inline pb-3" name='light-mode' id="toggle-mode" onclick="changeMode()"
-                        style="text-decoration: none">
-                        <img class="mb-1" src="assets/moon.png" width="25px" height="25px" alt="">
-                        <span class="light-mode">Dark Mode</span>
-                    </a>
+
                 </div>
 
                 <button type="button" class="navbar-toggle navbar-toggler collapsed bg-transparent border-0"
                     data-toggle="collapse" data-target="#navbar_links" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <i class="light-mode fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_links">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a data-scroll class="navlinks btn btn-block light-mode" href="#about">About</a></li>
-                        <li><a data-scroll class="navlinks btn btn-block light-mode" href="#skills">Skills</a></li>
-                        <li><a data-scroll class="navlinks btn btn-block light-mode" href="#projects">Projects</a>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#about">About</a></li>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#skills">Skills</a></li>
+                        <li><a data-scroll class="navlinks btn btn-block text-dark links" href="#projects">Projects</a>
                         </li>
 
-                        <li class="pr-btn"><a href="Praneet.pdf"
-                                class="navlinks btn btn-block btn-outline-dark">Resume</a></li>
+                        <li class="pr-btn"><a href="Praneet.pdf" class="navlinks btn btn-block btn-outline-secondary"
+                                style="color: inherit;">Resume</a></li>
                     </ul>
                 </div>
 
@@ -76,13 +72,11 @@
                     style="margin-top: 0">
                     <!-- <img id="hi_img" src="assets/hi.png" alt="Hi Emoji"> -->
                     <img src="assets/face.png" id="face_img" class="mb-1" width="240px" height="200px" alt="">
-
-                    <h1 class="font-weight-bold light-mode" id="name">I'm Praneet Bomma</h1>
+                    <h1 class="font-weight-bold pt-0" id="name">I'm Praneet Bomma</h1>
                     <!-- <span class="font-weight-bold" id="developer"><img src="assets/Python-logo-notext.svg" alt="">
                         &nbsp;Developer</span> -->
 
-                    <p id="myDescription" class="light-mode">Started as an Android Developer, tried my hands at Web
-                        Development.
+                    <p id="myDescription">Started as an Android Developer, tried my hands at Web Development.
                         <br>Finally, aspiring to be a Data Scientist!
                         <br>I have miles to go. But, what's the fun if it's easy!
                     </p>
@@ -100,7 +94,7 @@
 
             <section class="wrapper container section text-center" id="skills">
 
-                <h1 class="font-weight-bold text-center text-uppercase light-mode">Skills</h1>
+                <h1 class="font-weight-bold text-center text-uppercase">Skills</h1>
                 <div id="skill_level">
                     <div class="row">
                         <div class="col-4"><img src="assets/beginner.png" class="skill_level" alt="Beginner Level">
@@ -111,9 +105,9 @@
                         </div>
                     </div>
                     <div class="row pt-1">
-                        <div class="col-4 light-mode">Beginner</div>
-                        <div class="col-4 light-mode">Intermediate</div>
-                        <div class="col-4 light-mode">Advanced</div>
+                        <div class="col-4">Beginner</div>
+                        <div class="col-4">Intermediate</div>
+                        <div class="col-4">Advanced</div>
                     </div>
                 </div>
 
@@ -121,7 +115,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail justify-content-center">
                             <img src="assets/Python-logo-notext.svg" class="skill_img rounded" alt="Python logo">
-                            <h4 class="font-weight-bold light-mode">Python</h4>
+                            <h4 class="font-weight-bold">Python</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -130,7 +124,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/image.svg" class="skill_img rounded" alt="Image Processing image">
-                            <h4 class="font-weight-bold light-mode">Image Processing</h4>
+                            <h4 class="font-weight-bold">Image Processing</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -139,7 +133,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/chip.svg" class="skill_img rounded" alt="Deep Learning">
-                            <h4 class="font-weight-bold light-mode">Deep Learning</h4>
+                            <h4 class="font-weight-bold">Deep Learning</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -149,7 +143,7 @@
                         <div class="row skill_detail">
                             <img src="assets/if_React.js_logo_1174949.svg" class="skill_img rounded"
                                 alt="React Native logo">
-                            <h4 class="font-weight-bold light-mode">React Native</h4>
+                            <h4 class="font-weight-bold">React Native</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -158,7 +152,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/responsive.svg" class="skill_img rounded" alt="Web Development">
-                            <h4 class="font-weight-bold light-mode">Web Dev</h4>
+                            <h4 class="font-weight-bold">Web Dev</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -168,7 +162,7 @@
                         <div class="row skill_detail">
                             <img src="assets/if_nodejs-new-pantone-black_1012818.svg" class="skill_img rounded"
                                 alt="Node JS logo">
-                            <h4 class="font-weight-bold light-mode">NodeJS</h4>
+                            <h4 class="font-weight-bold">NodeJS</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -177,7 +171,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/android.svg" class="skill_img rounded" alt="Android logo">
-                            <h4 class="font-weight-bold light-mode">Android</h4>
+                            <h4 class="font-weight-bold">Android</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -186,7 +180,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/github-logo.svg" class="skill_img rounded" alt="Github logo">
-                            <h4 class="font-weight-bold light-mode">Github</h4>
+                            <h4 class="font-weight-bold">Github</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -195,7 +189,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/coding.svg" class="skill_img rounded" alt="Scraping">
-                            <h4 class="font-weight-bold light-mode">Scraping</h4>
+                            <h4 class="font-weight-bold">Scraping</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -205,7 +199,7 @@
                         <div class="row skill_detail">
                             <img src="assets/The_C_Programming_Language_logo.svg" class="skill_img rounded"
                                 alt="C Language">
-                            <h4 class="font-weight-bold light-mode">C Language</h4>
+                            <h4 class="font-weight-bold">C Language</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -214,7 +208,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/icons8-java-48.png" class="skill_img rounded" alt="Java logo">
-                            <h4 class="font-weight-bold light-mode">Java</h4>
+                            <h4 class="font-weight-bold">Java</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -223,7 +217,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/if_MySQL_1012821.svg" class="skill_img rounded" alt="MySQL logo">
-                            <h4 class="font-weight-bold light-mode">MySQL</h4>
+                            <h4 class="font-weight-bold">MySQL</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -232,7 +226,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/firebase.png" class="skill_img rounded" alt="Firebase logo">
-                            <h4 class="font-weight-bold light-mode">Firebase</h4>
+                            <h4 class="font-weight-bold">Firebase</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -241,7 +235,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/mongodb.png" class="skill_img rounded" alt="MongoDB logo">
-                            <h4 class="font-weight-bold light-mode">MongoDB</h4>
+                            <h4 class="font-weight-bold">MongoDB</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -250,7 +244,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/restful.png" class="skill_img rounded" alt="RESTful">
-                            <h4 class="font-weight-bold light-mode">RESTful</h4>
+                            <h4 class="font-weight-bold">RESTful</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/intermediate.png" alt="Intermediate">
@@ -259,7 +253,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4 skills">
                         <div class="row skill_detail">
                             <img src="assets/flask.png" class="skill_img rounded" alt="Flask logo">
-                            <h4 class="font-weight-bold light-mode">Flask</h4>
+                            <h4 class="font-weight-bold">Flask</h4>
                         </div>
                         <div class="row justify-content-center skill_level_img">
                             <img src="assets/beginner.png" alt="Beginner">
@@ -271,13 +265,13 @@
 
             <section class="container text-center" id="projects">
 
-                <h1 class="font-weight-bold text-center text-uppercase light-mode">Projects</h1>
+                <h1 class="font-weight-bold text-center text-uppercase">Projects</h1>
 
                 <div class="owl-carousel mt-5" id="project_carousel">
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Smart Editor</h5>
+                        <h5 class="card-header font-weight-bold">Smart Editor</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">A web app to convert handwritten forms to digital forms.
+                            <p class="card-text">A web app to convert handwritten forms to digital forms.
                                 Initially you are supposed to upload a template
                                 of your form that isn't filled. That is only a one time task. If the templates
                                 of your form is already available, you just need to
@@ -291,17 +285,16 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Smart_Editor"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Voices of Mumbai</h5>
+                        <h5 class="card-header font-weight-bold">Voices of Mumbai</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">A service for people to report the potholes in their area.
-                                It
+                            <p class="card-text">A service for people to report the potholes in their area. It
                                 is a telegram service bot wherein you can report the image and location of the
                                 pothole. The complaint will be lodged. The admin also gets the severity of the
                                 pothole and can act accordingly. It was built using Telegram Bot Api, Flask and
@@ -313,16 +306,16 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Voices_of_Mumbai"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Docify</h5>
+                        <h5 class="card-header font-weight-bold">Docify</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">
+                            <p class="card-text">
                                 A service for extracting text from ID cards in India, like Aadhar Card, PAN Card
                                 and Driving Licence.
                                 You just need to click and send a picture of the card to the API and get a json
@@ -337,17 +330,16 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Docify"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">E-CheckIn</h5>
+                        <h5 class="card-header font-weight-bold">E-CheckIn</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">An Android application that can be used to check-in
-                                registered
+                            <p class="card-text">An Android application that can be used to check-in registered
                                 participants using the QR Code that was sent
                                 after successfull registration. It was specially built to use during ERR_404
                                 State Level Hackathon. This app can help avoid
@@ -355,16 +347,16 @@
                             <div class="row">
                                 <span class="rounded tag android">Android</span>
                                 <a target="_blank" href="https://github.com/Praneet9/ECheckIn"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">G-Prof</h5>
+                        <h5 class="card-header font-weight-bold">G-Prof</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">YOLO (You only look once) detector for garbage profiling.
+                            <p class="card-text">YOLO (You only look once) detector for garbage profiling.
                                 I'm working on a Deep Learning model that detects the brand of wrappers in the
                                 garbage for its profiling in certain areas. This can help identify the plastic
                                 usage for every brand.
@@ -374,17 +366,16 @@
                                 <span class="rounded tag ip">Image Processing</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/YOLO"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Plant Monitoring</h5>
+                        <h5 class="card-header font-weight-bold">Plant Monitoring</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">A deep learning based system for disorder detection in
-                                tomato
+                            <p class="card-text">A deep learning based system for disorder detection in tomato
                                 plants. Also using IoT to get sensor data
                                 from the plants. This project is currently under development. This model is
                                 currently trained on images. It will further be
@@ -397,16 +388,16 @@
                                 <span class="rounded tag web">Web</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Plant_Monitor"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Advanced Farming</h5>
+                        <h5 class="card-header font-weight-bold">Advanced Farming</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">An Android application that was built using a touchless UI
+                            <p class="card-text">An Android application that was built using a touchless UI
                                 philosophy. It is for farmers who aren't so well-versed
                                 with touchscreen smartphones. The farmer can report issues, contact authorities
                                 or get their work done using their
@@ -416,16 +407,16 @@
                                 <span class="rounded tag mysql">MySQL</span>
                                 <span class="rounded tag web">Web</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Advanced-Farming"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h5 class="card-header font-weight-bold light-mode">Live Sketch</h5>
+                        <h5 class="card-header font-weight-bold">Live Sketch</h5>
                         <div class="card-body">
-                            <p class="card-text light-mode">This is a basic real-time conversion of images captured from
+                            <p class="card-text">This is a basic real-time conversion of images captured from
                                 webcam to sketch. I am planning to integrate Neural
                                 Style Transfer in this and also will be trying to integrate some filters using
                                 landmark detection.</p>
@@ -433,33 +424,33 @@
                                 <span class="rounded tag ip">Image Processing</span>
                                 <span class="rounded tag python">Python</span>
                                 <a target="_blank" href="https://github.com/Praneet9/Live_Sketch"
-                                    class="btn btn-outline-dark viewgithub">
+                                    class="btn btn-outline-secondary viewgithub">
                                     View on Github
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-outline-dark btn-sm prev-btn">
-                    <</button> <button class="btn btn-outline-dark btn-sm next-btn">>
+                <button class="btn btn-outline-secondary btn-sm prev-btn">
+                    <</button> <button class="btn btn-outline-secondary btn-sm next-btn">>
                 </button>
 
             </section>
 
             <section class="container" id="about">
 
-                <h1 class="font-weight-bold text-center text-uppercase light-mode">About Me</h1>
+                <h1 class="font-weight-bold text-center text-uppercase">About Me</h1>
 
-                <div class="shadow p-5 mt-5 card-body" id="about_card">
+                <div class="shadow p-5 mt-5 bg-white" id="about_card">
 
                     <div class="row">
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
-                            <h3 class="font-weight-bold light-mode">About</h3>
+                            <h3 class="font-weight-bold">About</h3>
                         </div>
 
                         <div class="col-lg-8 col-sm-12 p-2 text-center">
-                            <p class="text-muted light-mode">
+                            <p class="text-muted">
                                 I have tried different languages, frameworks and technologies.
                                 Data Science seems to have caught my eye. Considering it as my career path.
                                 <br>Apart from that, I'm fun to hang out with.
@@ -467,7 +458,7 @@
                         </div>
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
-                            <h3 class="font-weight-bold light-mode">Experience</h3>
+                            <h3 class="font-weight-bold">Experience</h3>
                         </div>
 
                         <div class="col-lg-8 col-sm-12 p-2 text-center">
@@ -480,7 +471,7 @@
                         </div>
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
-                            <h3 class="font-weight-bold light-mode">Activities</h3>
+                            <h3 class="font-weight-bold">Activities</h3>
                         </div>
 
                         <div class="col-lg-8 col-sm-12 p-2 text-center">
@@ -493,7 +484,7 @@
                         </div>
 
                         <div class="col-lg-4 col-sm-12 p-2 text-center">
-                            <h3 class="font-weight-bold light-mode">Hobbies</h3>
+                            <h3 class="font-weight-bold">Hobbies</h3>
                         </div>
 
                         <div class="col-lg-8 col-sm-12 p-2 text-center">
@@ -511,7 +502,7 @@
 
                 <h1 id="interested" class="font-weight-bold text-center text-uppercase">Interested?</h1>
 
-                <h1 id="hire_header" class="font-weight-bold text-center text-uppercase light-mode">Hire Me</h1>
+                <h1 id="hire_header" class="font-weight-bold text-center text-uppercase">Hire Me</h1>
 
                 <div class="row mt-3">
 
@@ -521,7 +512,7 @@
 
                     <div class="col-lg-6 col-sm-12 align-self-center text-center pt-3">
                         <div id="myemail" class="row col-12 mt-2 mb-2 ml-0 justify-content-center">
-                            <h4 class="font-weight-bold light-mode">Reach me at
+                            <h4 class="font-weight-bold">Reach me at
                                 <hr>praneetbomma@gmail.com</h4>
                         </div>
                     </div>
@@ -545,10 +536,10 @@
                         </span>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 pt-3 pb-3">
-                        <h3 class="font-weight-bold light-mode">praneetbomma</h3>
+                        <h3 class="font-weight-bold">praneetbomma</h3>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 pt-3 pb-3">
-                        <h6 class="font-weight-bold light-mode">Thank you <a href="https://github.com/gnasherx"
+                        <h6 class="font-weight-bold">Thank you <a href="https://github.com/gnasherx"
                                 style="text-decoration: none; color: inherit">gnasherx</a>
                             for design inspirations <i class="fa fa-heart" style="color: red;"></i></h6>
                     </div>
@@ -567,66 +558,7 @@
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/main.js"></script>
-    <script>
-        function changeMode() {
-            var toggle = document.getElementById('toggle-mode');
-            var toggle_img = toggle.children[0]
-            var toggle_span = toggle.children[1]
-            if (toggle_span.className === 'dark-mode') {
-                var found = true
-                while (found == true) {
-                    var dark_mode = document.getElementsByClassName('dark-mode')
-                    if (dark_mode.length == 0) {
-                        found = false;
-                    }
-                    for (var idx = 0; idx < dark_mode.length; idx++) {
-                        dark_mode[idx].classList.replace('dark-mode', 'light-mode');
-                    }
-                }
-                found = true;
-                while (found == true) {
-                    var dark_mode = document.getElementsByClassName('btn-outline-light')
-                    if (dark_mode.length == 0) {
-                        found = false;
-                    }
-                    for (var idx = 0; idx < dark_mode.length; idx++) {
-                        dark_mode[idx].classList.replace('btn-outline-light', 'btn-outline-dark');
-                    }
-                }
-                var dark_mode = document.getElementsByTagName('body')
-                dark_mode[0].classList.replace('dark-body', 'light-body');
-                toggle_img.src = 'assets/moon.png'
-                toggle_span.innerHTML = 'Dark Mode'
-            }
-            else if (toggle_span.className === 'light-mode') {
-                var found = true
-                while (found == true) {
-                    var light_mode = document.getElementsByClassName('light-mode')
-                    if (light_mode.length == 0) {
-                        found = false;
-                    }
-                    for (var idx = 0; idx < light_mode.length; idx++) {
-                        light_mode[idx].classList.replace('light-mode', 'dark-mode');
-                    }
-                }
-                found = true;
-                while (found == true) {
-                    var light_mode = document.getElementsByClassName('btn-outline-dark')
-                    if (light_mode.length == 0) {
-                        found = false;
-                    }
-                    for (var idx = 0; idx < light_mode.length; idx++) {
-                        light_mode[idx].classList.replace('btn-outline-dark', 'btn-outline-light');
-                    }
-                }
-                var light_mode = document.getElementsByTagName('body')
-                light_mode[0].classList.replace('light-body', 'dark-body');
-                toggle_img.src = 'assets/sun.png'
-                toggle_span.innerHTML = 'Light Mode'
-            }
-        }
 
-    </script>
 </body>
 
 </html>

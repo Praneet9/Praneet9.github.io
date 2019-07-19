@@ -10,7 +10,7 @@ animate.reveal('#name', { distance: '100px', origin: 'bottom', delay: time += 10
 animate.reveal('#developer', { distance: '100px', origin: 'bottom', delay: 800 });
 animate.reveal('#myDescription', { distance: '100px', origin: 'bottom', delay: time += 100 });
 animate.reveal('#dwresume', { distance: '100px', origin: 'bottom', delay: time += 100 });
-animate.reveal('.navtitle', { distance: '100px', origin: 'left', delay: 100 });
+// animate.reveal('.navtitle', { distance: '100px', origin: 'left', delay: 100 });
 // animate.reveal('.navlinks', { distance: '100px', origin: 'right', delay: 100 });
 animate.reveal('.skills', { distance: '100px', origin: 'bottom', delay: 200, interval: 50 });
 animate.reveal('#owl-carousel', { distance: '100px', origin: 'left', delay: 400 });
